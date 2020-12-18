@@ -1,9 +1,10 @@
 # This is the read me file!
 
-## Subtitles look like this
+## Team
 
-- bullet 1 
-- bullet 2
+- Kanny
+- Kim
+- Cedal
 
 
 **bold text are used with 'astericks** 
