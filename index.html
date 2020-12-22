@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<<<<<<< HEAD
   <head>
     <title>Title</title>
     <!-- Required meta tags -->
@@ -33,4 +34,70 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    Home page!
+    made some changes!
+    other changes 
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias assumenda cumque labore! Eligendi expedita perferendis provident porro quis non repudiandae tenetur, suscipit sit tempora quos culpa iusto. Laboriosam, quod neque.
+    Testing page
+    <!-- <a href="https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj"> Click here for Travel info.</a> -->
+    <script>
+
+        let locationsArr = [];
+        let urlVariable = "";
+
+        urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
+        locationsArr.push(urlVariable);
+        console.log(locationsArr);
+        let promiseTest = Promise.all(locationsArr);
+        console.log(promiseTest);
+
+        promiseTest.then((arrayResults) =>{
+            return Promise.all(arrayResults.map(char=>{
+            return char.json()
+        }))
+    })
+    .then((dataOfArray) =>{
+            console.log(dataOfArray[0].results[0].id);
+            let location = [];
+            // dataOfArray.forEach((char)=>{
+            //     location = [...location, ...char]
+            // })
+    // console.log(location);
+
+
+    })
+
+        // urlVariable.forEach(url =>{
+        //     $.get(url)
+        // .done((response) =>{
+        //     let $result = $(response).find('.id')
+        //         alert($result)
+            // for(let v of $result){
+            //     try{
+            //         console.log(`${v}`)
+            //     }
+            //     catch{}
+            // }
+            
+
+    //     })
+
+    // })
+
+
+
+    //     })
+
+
+    </script>
+</body>
+>>>>>>> bca030e7b569c5c23cd0f1f477a40e1498183b9b
 </html>
