@@ -7,6 +7,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+    <div class="locations-Var"></div>
     Home page!
     made some changes!
     other changes 
@@ -14,7 +15,7 @@
     Testing page
     <!-- <a href="https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj"> Click here for Travel info.</a> -->
     <script>
-
+    $(()=>{
         let locationsArr = [];
         let urlVariable = "";
 
@@ -31,14 +32,18 @@
     })
     .then((dataOfArray) =>{
             console.log(dataOfArray[0].results[0].id);
-            let location = [];
-            // dataOfArray.forEach((char)=>{
-            //     location = [...location, ...char]
-            // })
-    // console.log(location);
+            let location  = [dataOfArray[0].results[0].id]
 
+            let $locationsVar = $(".locations-Var");
+            let liTag = location.map((char) =>{
 
+                return `<a href="${char.urlVariable}" class="locations-Var"> Test Comment</a>`
+            })
+            $locationsVar.html(liTag.join(""))
+            let $div = $(".locations-Var")
     })
+
+
 
         // urlVariable.forEach(url =>{
         //     $.get(url)
@@ -47,7 +52,7 @@
         //         alert($result)
             // for(let v of $result){
             //     try{
-            //         console.log(`${v}`)
+            //         console.log(``)
             //     }
             //     catch{}
             // }
@@ -61,7 +66,7 @@
 
     //     })
 
-
+            })
     </script>
 </body>
 </html>
