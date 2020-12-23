@@ -6,7 +6,7 @@ let opts = {
 	
 } //make a variable where it says date of birth//initialize
 
-// let tavelInfo =
+let tavelInfo =
 	fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/",
 		{
 			method: 'post',
@@ -22,8 +22,10 @@ let opts = {
 
 		.then(data => {
 			console.log(data.data["Travel Habits"])
-	
+
 		})
+
+	
 
 	
 
