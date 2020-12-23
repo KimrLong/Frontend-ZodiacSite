@@ -4,5 +4,26 @@ https://coolors.co/cf0000-8a0000-210000-110000-000012-000021-00004e-000089-0000c
 
 
 
-Additioal Shades that work with our template
+Additional Shades that work with our template
 https://coolors.co/660a0b-8a0000-320a28-283845-104f55
+
+
+
+
+There can be alot of different information that does pop up and is recommended to someone based on what their answer is. The text that is returned from the API can be manipulated so we wouldn't have to rewrite whats already been input in the API.
+    Since everyone is going on a vacation, it would be nice to have the pictures for the places that we recommend. The only problem could be that the pictures clash with the vibe and style of our webpage. 
+
+for code that looks like what I have below in the API, if the parameter for go inside is switched to false, then the asnwers that pop up will change as well.
+
+
+    /api/20201111/city_walk.json?
+location_id=Lisbon
+&go_inside=true
+&include_poi_ids=W__96319699
+&exclude_poi_ids=N__404032478
+&total_time=300
+
+
+We can right click on ANY part of the API information and find out exactly how to get there. 
+
+We should decide which images to use and which exact direction to go in using the API information that we have.
