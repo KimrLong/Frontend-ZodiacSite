@@ -67,13 +67,17 @@
     <div class="locations-Var"></div>
     <!-- <a href="https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj"> Click here for Travel info.</a> -->
     <script>
+    // function zodiacInfo(){
     $(()=>{
+        //only use the the poi, give the user a list of choice to choose from.
+        //array variables for the different locations for the user.
         let locationsArr = [];
         let urlVariable = "";
-
+        let cityNames = ["Italy" ,"Paris", "Dubai", "Peru", "Bali", "Libson", "Zambia", "Cairo", "Brazil", "Salvador", "Montego_Bay"]
+        let event = ["city_walk", "poi", "location","location_id" ]
         // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
         // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?part_of=Greece&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
-        urlVariable = fetch("https://www.triposo.com/api/20201111/city_walk.json?location_id=Houston&tag_labels=sightseeing&total_time=300&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
+        urlVariable = fetch(`https://www.triposo.com/api/20201111/${event[1]}.json?&${event[3]}=${cityNames[8]}&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
         locationsArr.push(urlVariable);
         console.log(locationsArr);
         let promiseTest = Promise.all(locationsArr);
@@ -83,11 +87,12 @@
             return Promise.all(arrayResults.map(char=>{
             return char.json()
         }))
+        
     })
     .then((dataOfArray) =>{
             console.log(dataOfArray)
             // console.log(dataOfArray[0].results[0].images[0].source_url); // how to acces an image
-            // console.log(dataOfArray[0].results[0]);
+            console.log(dataOfArray[0].results[0]);
 
             // let location  = [dataOfArray[0].results[0]]
 
@@ -100,7 +105,7 @@
             // let $div = $(".locations-Var")
     })
 
-
+}
 
         // urlVariable.forEach(url =>{
         //     $.get(url)
@@ -123,8 +128,11 @@
 
     //     })
 
-            })
+            )
     </script>
+
+
     <script src="JS/app.js"></script>
+
 </body>
 </html>
