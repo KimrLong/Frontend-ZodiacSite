@@ -36,4 +36,4 @@ let tavelInfo =
 		})
 }
 
-console.log(newFunc(Virgo));
+
