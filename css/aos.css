@@ -1,1 +1,64 @@
-test
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color:#e5e5e5;
+}
+
+.astrologyImg{
+    overflow: hidden;
+    height: 7%;
+    width: 7%;
+    margin: 2px;
+    box-shadow: 0px 0px 20px black;
+    
+}
+
+
+.header{
+    position: relative;
+    height:100px;
+    background-color:yellow;
+    overflow: hidden;
+}
+.opacity{
+    background-color:black;
+    height: 100%;
+    width: 100%;
+    opacity: 70%;
+    z-index: 100;
+}
+.imgcontainar{
+    position: relative;
+    }
+.skyImg{
+    position: absolute;
+    top: -500px;
+}
+
+.textContainar{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    z-index: 120;
+}
+
+
+.text{
+    font-size:xx-large;
+    font-family: "Aquifer", Courier, Cursive;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
