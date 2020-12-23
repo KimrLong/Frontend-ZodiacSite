@@ -39,9 +39,7 @@ color: black;
 color: white;
 }
 
-div {
-    font-family: "Aquifer", Courier, Cursive;
-}
+
 hover {
     color:white;
     text-decoration: underline;
@@ -51,4 +49,10 @@ img{
     height: 100%;
     width: 100%;
     box-shadow: 0px 0px 20px black;
+}
+
+text{
+    font-size: larger;
+    font-family: "Aquifer", Courier, Cursive;
+    color: black;
 }
