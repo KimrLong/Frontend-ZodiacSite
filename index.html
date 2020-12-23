@@ -41,18 +41,15 @@
 </head>
 <body>
     <div class="locations-Var"></div>
-    Home page!
-    made some changes!
-    other changes 
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias assumenda cumque labore! Eligendi expedita perferendis provident porro quis non repudiandae tenetur, suscipit sit tempora quos culpa iusto. Laboriosam, quod neque.
-    Testing page
     <!-- <a href="https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj"> Click here for Travel info.</a> -->
     <script>
     $(()=>{
         let locationsArr = [];
         let urlVariable = "";
 
-        urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
+        // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
+        // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?part_of=Greece&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
+        urlVariable = fetch("https://www.triposo.com/api/20201111/city_walk.json?location_id=Houston&tag_labels=sightseeing&total_time=300&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
         locationsArr.push(urlVariable);
         console.log(locationsArr);
         let promiseTest = Promise.all(locationsArr);
@@ -64,16 +61,19 @@
         }))
     })
     .then((dataOfArray) =>{
-            console.log(dataOfArray[0].results[0].id);
-            let location  = [dataOfArray[0].results[0].id]
+            console.log(dataOfArray)
+            // console.log(dataOfArray[0].results[0].images[0].source_url); // how to acces an image
+            // console.log(dataOfArray[0].results[0]);
 
-            let $locationsVar = $(".locations-Var");
-            let liTag = location.map((char) =>{
+            // let location  = [dataOfArray[0].results[0]]
 
-                return `<a href="${char.urlVariable}" class="locations-Var"> Test Comment</a>`
-            })
-            $locationsVar.html(liTag.join(""))
-            let $div = $(".locations-Var")
+            // let $locationsVar = $(".locations-Var");
+            // let liTag = location.map((char) =>{
+
+            //     return `<a href="${char.urlVariable}" class="locations-Var"> Test Comment</a>`
+            // })
+            // $locationsVar.html(liTag.join(""))
+            // let $div = $(".locations-Var")
     })
 
 
