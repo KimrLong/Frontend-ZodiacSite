@@ -11,6 +11,7 @@ Charcoal: 283845
 body {
     margin: 0px;
     padding: 0px;
+    background-color:#e5e5e5;
 }
 .cp-bg-navy {
 background-color: #003348;
@@ -48,6 +49,6 @@ hover {
 img{
     overflow: hidden;
     height: 100%;
-    width:100%;
+    width: 100%;
     box-shadow: 0px 0px 20px black;
 }
