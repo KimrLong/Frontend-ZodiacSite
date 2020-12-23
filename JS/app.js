@@ -1,4 +1,5 @@
 
+
 fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/", {
 	"method": "POST",
 	"headers": {
@@ -27,6 +28,28 @@ function newFunction (month){
 } //make a variable where it says date of birth//initialize
 
 // let tavelInfo =
+
+var Cap = "2000-01-17"
+var Aqu = "2000-02-17"
+var Pisces = "2000-03-17"
+var Aries = "2000-04-17"
+var Taurus = "2000-05-17"
+var Gemini = "2000-06-17"
+var Cancer = "2000-07-17"
+var Leo = "2000-08-17"
+var Virgo = "2000-09-17"
+var Libra = "2000-10-17"
+var Scorp = "2000-11-17"
+var Sagg = "2000-12-17"
+
+
+
+function newFunc(zodiac){
+let opts = {
+	mystic_dob: zodiac,
+} 
+let tavelInfo =
+
 	fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/",
 		{
 			method: 'post',
@@ -39,9 +62,9 @@ function newFunction (month){
 			body: JSON.stringify(opts)
 		})
 		.then(result => result.json())
-
 		.then(data => {
 			console.log(data.data["Travel Habits"])
+
 	
 		})
 
@@ -64,14 +87,6 @@ function newFunction (month){
 	// 	console.log(error)
 	// })
 
-	var January = "1987-01-01"
-	var Feb = "1987-02-02"
-	var March = 1987-01-01
-	var April = 1987-01-01
-newFunction(January)
-newFunction(Feb)
-newFunction(March)
-newFunction(April)
 
 
 
@@ -96,4 +111,11 @@ newFunction(April)
 	// 	.then((data) => {
 	// 		console.log(data)
 	// 	})
+
+
+
+		})
+}
+
+console.log(newFunc(Virgo));
 
