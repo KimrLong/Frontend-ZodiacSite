@@ -19,10 +19,10 @@ fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/", {
 });
 
 
-
-let opts = {
-	mystic_dob: "1987-10-17",
-	mystic_name: "Kanny"
+function newFunction (month){
+		let opts = {
+		mystic_dob: month, //"1987-10-17",
+		mystic_name: "Kanny"
 	
 } //make a variable where it says date of birth//initialize
 
@@ -46,7 +46,7 @@ let opts = {
 		})
 
 	
-
+	}
 
 	// fetch('https://corona.lmao.ninja/v2/states')
 	// .then(result => result.json())
@@ -63,6 +63,15 @@ let opts = {
 	// .catch((error)=>{
 	// 	console.log(error)
 	// })
+
+	var January = "1987-01-01"
+	var Feb = "1987-02-02"
+	var March = 1987-01-01
+	var April = 1987-01-01
+newFunction(January)
+newFunction(Feb)
+newFunction(March)
+newFunction(April)
 
 
 
