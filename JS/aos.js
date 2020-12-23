@@ -1,3 +1,81 @@
+ 
+ 
+$(()=>{
+ 
+ 
+  var granimInstance = new Granim({
+    element: '#canvas-image-blending',
+    direction: 'top-bottom',
+    isPausedWhenNotInView: true,
+    image : {
+        source: "images/jerry-larry-7uvixXrQkfw-unsplash.jpg",
+        blendingMode: 'multiply'
+    },
+    states : {
+        "default-state": {
+            gradients: [
+                ['#29323c', '#485563'],
+                ['#FF6B6B', '#556270'],
+                ['#80d3fe', '#7ea0c4'],
+                ['#f0ab51', '#eceba3']
+            ],
+            transitionSpeed: 7000
+        }
+    }
+  });
+
+})
+// var granimInstance = new Granim({
+//   element: '',
+//   name: 'granim',
+//   elToSetClassOn: 'body',
+//   direction: 'diagonal',
+//   isPausedWhenNotInView: false,
+//   scrollDebounceThreshold: 300,
+//   stateTransitionSpeed: 1000,
+//   image : {
+//       source: '../assets/img/bg-forest.jpg',
+//       position: ['center', 'bottom'],
+//       stretchMode: ['stretch', 'stretch-if-bigger'],
+//       blendingMode: 'multiply',
+//   },
+//   states : {
+//       "default-state": {
+//           gradients: [
+//               ['#834d9b', '#d04ed6'],
+//               ['#1CD8D2', '#93EDC7']
+//           ],
+//           transitionSpeed: 5000,
+//           loop: true
+//       },
+//       "dark-state": {
+//           gradients: [
+//               ['#757F9A', '#D7DDE8'],
+//               ['#5C258D', '#4389A2']
+//           ],
+//           transitionSpeed: 5000,
+//           loop: true
+//       }
+//   },
+//   onStart: function() {
+//       console.log('Granim: onStart');
+//   },
+//   onGradientChange: function(colorDetails) {
+//       console.log('Granim: onGradientChange, details: ');
+//       console.log(colorDetails);
+//   },
+//   onEnd: function() {
+//       console.log('Granim: onEnd');
+//   }
+// );
+
+
+
+
+
+
+
+
 AOS.init();
 
 // You can also pass an optional settings object
