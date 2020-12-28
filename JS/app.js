@@ -23,7 +23,7 @@ fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/", {
 function newFunction (month){
 		let opts = {
 		mystic_dob: month, //"1987-10-17",
-		mystic_name: "Kanny"
+		mystic_name: "Kanny",
 	
 } //make a variable where it says date of birth//initialize
 
@@ -114,6 +114,7 @@ let tavelInfo =
 
 
 
+
 	//	})
 }
 
@@ -180,4 +181,8 @@ pisces1.addEventListener('click',()=>{
 })
 
 console.log(newFunc(Virgo));
+
+
+// 		})
+// }
 
