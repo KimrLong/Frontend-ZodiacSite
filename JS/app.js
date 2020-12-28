@@ -114,5 +114,75 @@ let tavelInfo =
 
 
 
+
+	//	})
+}
+
+
+
+var aries1 = document.querySelector('#aries')
+aries1.addEventListener('click',()=>{
+	newFunc(Aries)
+})
+
+var taurus1 = document.querySelector('#taurus')
+taurus1.addEventListener('click',()=>{
+	newFunc(Taurus)
+})
+
+var gemini1 = document.querySelector('#gemini')
+gemini1.addEventListener('click',()=>{
+	newFunc(Gemini)
+})
+
+var cancer1 = document.querySelector('#cancer')
+cancer1.addEventListener('click',()=>{
+	newFunc(Cancer)
+})
+
+var leo1 = document.querySelector('#leo')
+leo1.addEventListener('click',()=>{
+	newFunc(Leo)
+})
+
+var virgo1 = document.querySelector('#virgo')
+virgo1.addEventListener('click',()=>{
+	newFunc(Virgo)
+})
+
+var libra1 = document.querySelector('#libra')
+libra1.addEventListener('click',()=>{
+	newFunc(Libra)
+})
+
+var scorpio1 = document.querySelector('#scorpio')
+scorpio1.addEventListener('click',()=>{
+	newFunc(Scorp)
+})
+
+var sagittarius1 = document.querySelector('#sagittarius')
+sagittarius1.addEventListener('click',()=>{
+	newFunc(Aries)
+})
+
+var aries1 = document.querySelector('#capricorn')
+aries1.addEventListener('click',()=>{
+	newFunc(Aries)
+})
+
+var aries1 = document.querySelector('#aquarius')
+aries1.addEventListener('click',()=>{
+	newFunc(Sagg)
+})
+
+var pisces1 = document.querySelector('#pisces')
+pisces1.addEventListener('click',()=>{
+	newFunc(Pisces)
+})
+
+console.log(newFunc(Virgo));
+
+
 // 		})
 // }
+
