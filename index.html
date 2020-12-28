@@ -8,48 +8,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/test.css">
+    
 </head>
     <body>
-        <!-- navbar -->
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">Project Name</a>
-            </nav>
-          </div>
-          <!-- end of navbar -->
 
-        <div class=" container-fluid ">
-
-            <div class="row ">
-                <div class="col-3 d-flex justify-content-center">
-                    <img src="images/aries.png" alt="aries">
-                    <img src="images/taurus.png" alt="taurus">
-                    <img src="images/gemini.png" alt="gemini">
-                    <img src="images/cancer.png" alt="cancer">
-                </div>
-            </div>
-
-            <div class="row ">
-                <div class="col-3 d-flex justify-content-center mx">
-                    <img src="images/leo.png" alt="leo" >
-                    <img src="images/virgo.png" alt="virgo"  >
-                    <img src="images/libra.png" alt="libra" >
-                    <img src="images/scorpio.png" alt="scorpio"  >
-                </div>
-            </div>
-
-            <div class="row ">
-                <div class="col-3 d-flex justify-content-center mx">
-                    <img src="images/sagittarius.png" alt="sagittarius">
-                    <img src="images/capricorn.png" alt="capricorn">
-                    <img src="images/aquarius.png" alt="aquarius">
-                    <img src="images/pisces.png" alt="pisces">
-                </div>
-            </div>
-            
-        </div> 
-        <!-- ending the container-fluid -->
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -67,15 +29,17 @@
     <div class="locations-Var"></div>
     <!-- <a href="https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj"> Click here for Travel info.</a> -->
     <script>
+    // function zodiacInfo(){
     $(()=>{
+        //only use the the poi, give the user a list of choice to choose from.
         //array variables for the different locations for the user.
         let locationsArr = [];
         let urlVariable = "";
-        let cityNames = ["Italy" ,"Paris", "Dubai", "Peru", "Bali", "Libson", "Zambia", "Cairo", "Brazil", "Guam", "Bimini"]
-        let event = ["city_walk", "poi", "location", "article","tour", "location_id" ]
+        let cityNames = ["Italy" ,"Paris", "Dubai", "Peru", "Bali", "Libson", "Zambia", "Cairo", "Brazil", "Salvador", "Montego_Bay"]
+        let event = ["city_walk", "poi", "location","location_id" ]
         // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
         // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?part_of=Greece&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
-        urlVariable = fetch(`https://www.triposo.com/api/20201111/${event[1]}.json?&${event[5]}&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
+        urlVariable = fetch(`https://www.triposo.com/api/20201111/${event[1]}.json?&${event[3]}=${cityNames[8]}&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
         locationsArr.push(urlVariable);
         console.log(locationsArr);
         let promiseTest = Promise.all(locationsArr);
@@ -103,7 +67,7 @@
             // let $div = $(".locations-Var")
     })
 
-
+}
 
         // urlVariable.forEach(url =>{
         //     $.get(url)
@@ -126,7 +90,7 @@
 
     //     })
 
-            })
+            )
     </script>
 
 
