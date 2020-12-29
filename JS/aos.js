@@ -8,7 +8,7 @@ $(()=>{
     direction: 'top-bottom',
     isPausedWhenNotInView: true,
     image : {
-        source: "images/space.jpeg",
+        source: "images/jerry-larry-7uvixXrQkfw-unsplash.jpg",
         blendingMode: 'multiply'
     },
     states : {

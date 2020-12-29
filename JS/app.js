@@ -20,14 +20,7 @@ fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/", {
 });
 
 
-function newFunction (month){
-		let opts = {
-		mystic_dob: month, //"1987-10-17",
-		mystic_name: "Kanny",
-	
-} //make a variable where it says date of birth//initialize
 
-// let tavelInfo =
 
 var Cap = "2000-01-17"
 var Aqu = "2000-02-17"
