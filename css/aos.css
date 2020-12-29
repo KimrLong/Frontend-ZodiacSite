@@ -12,7 +12,6 @@ body {
     margin: 0px;
     padding: 0px;
     background-color:#e5e5e5;
-   
 }
 .cp-bg-navy {
 background-color: #003348;
@@ -119,11 +118,20 @@ img{
     width: 100%;
 }
 
+
+
+/* body {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position:fixed;
+} */
+
 #canvas-image-blending {
-    background: url(../images/space.jpeg);
+
     background-size: cover; 
-    /* position: absolute; */
-    display: block;
+    position: fixed;
+    display: inline block;
     width: 100%;
     height: 100%; 
     top: 0;
