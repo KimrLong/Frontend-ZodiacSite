@@ -12,7 +12,6 @@ body {
     margin: 0px;
     padding: 0px;
     background-color:#e5e5e5;
-
 }
 .cp-bg-navy {
 background-color: #003348;
@@ -41,10 +40,7 @@ color: white;
 }
 
 
-hover {
-    color:white;
-    text-decoration: underline;
-}
+
 img{
     overflow: hidden;
     height: 100%;
@@ -64,7 +60,6 @@ img{
 .header{
     position: relative;
     height:100px;
-    background-color:yellow;
     overflow: hidden;
 }
 .opacity{
@@ -75,24 +70,37 @@ img{
     z-index: 100;
 }
 .imgcontainar{
-    position: relative;
+    position: absolute;
     }
 .skyImg{
     position: absolute;
     top: -500px;
+    
 }
 
-.textContainar{
+.textContainar1{
     position: absolute;
     top: 0px;
     height: 100%;
     width: 100%;
-    line-height: 50px;
-    text-align: center;
+    line-height: 60px;
+    text-align:left;
     font-size: 60px;
     color: white;
     z-index: 120;
 }
+.textContainar2{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    text-align:right;
+    font-size: 30px;
+    color: white;
+    z-index: 120;
+}
+
 
 
 .text{
@@ -110,12 +118,15 @@ img{
     width: 100%;
 }
 
+
+
 /* body {
     background-size: cover;
     height: 100%;
     width: 100%;
     position:fixed;
 } */
+
 #canvas-image-blending {
 
     background-size: cover; 
@@ -129,4 +140,3 @@ img{
     left: 0;
 
 }
-
