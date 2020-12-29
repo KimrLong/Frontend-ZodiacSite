@@ -20,7 +20,10 @@ fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/", {
 });
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> kanny
 
 var Cap = "2000-01-17"
 var Aqu = "2000-02-17"
@@ -61,7 +64,7 @@ let tavelInfo =
 	
 		})
 
-	
+
 	}
 
 	// fetch('https://corona.lmao.ninja/v2/states')
@@ -109,11 +112,11 @@ let tavelInfo =
 
 
 	//	})
-}
 
 
 
-var aries1 = document.querySelector('#aries')
+
+var aries1 = document.querySelector('#aries') 
 aries1.addEventListener('click',()=>{
 	newFunc(Aries)
 })
