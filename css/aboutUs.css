@@ -56,6 +56,35 @@ body {
     }
   }
 
+}
+
+.backgrounds {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  z-index: -1; }
+  .backgrounds .background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-attachment: fixed; }
+
+  .overlay:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #373941;
+    opacity: 0.8; }
+
+
   
 a:link, a:visited {
     
@@ -66,3 +95,4 @@ a:link, a:visited {
   display: inline-block;
  
 }
+>>>>>> main
