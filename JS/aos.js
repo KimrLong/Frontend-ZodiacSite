@@ -7,7 +7,7 @@ $(()=>{
     direction: 'top-bottom',
     isPausedWhenNotInView: true,
     image : {
-        source: "images/space.jpeg",
+        source: "images/jerry-larry-7uvixXrQkfw-unsplash.jpg",
         blendingMode: 'multiply'
     },
     states : {
@@ -24,49 +24,32 @@ $(()=>{
   });
 
 })
-// var granimInstance = new Granim({
-//   element: '',
-//   name: 'granim',
-//   elToSetClassOn: 'body',
-//   direction: 'diagonal',
-//   isPausedWhenNotInView: false,
-//   scrollDebounceThreshold: 300,
-//   stateTransitionSpeed: 1000,
-//   image : {
-//       source: '../assets/img/bg-forest.jpg',
-//       position: ['center', 'bottom'],
-//       stretchMode: ['stretch', 'stretch-if-bigger'],
-//       blendingMode: 'multiply',
-//   },
-//   states : {
-//       "default-state": {
-//           gradients: [
-//               ['#834d9b', '#d04ed6'],
-//               ['#1CD8D2', '#93EDC7']
-//           ],
-//           transitionSpeed: 5000,
-//           loop: true
-//       },
-//       "dark-state": {
-//           gradients: [
-//               ['#757F9A', '#D7DDE8'],
-//               ['#5C258D', '#4389A2']
-//           ],
-//           transitionSpeed: 5000,
-//           loop: true
-//       }
-//   },
-//   onStart: function() {
-//       console.log('Granim: onStart');
-//   },
-//   onGradientChange: function(colorDetails) {
-//       console.log('Granim: onGradientChange, details: ');
-//       console.log(colorDetails);
-//   },
-//   onEnd: function() {
-//       console.log('Granim: onEnd');
-//   }
-// );
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("aries");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+
+//this is the modal JS Kim added//
+
 
 
 

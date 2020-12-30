@@ -40,10 +40,7 @@ color: white;
 }
 
 
-hover {
-    color:white;
-    text-decoration: underline;
-}
+
 img{
     overflow: hidden;
     height: 100%;
@@ -62,7 +59,6 @@ img{
 .header{
     position: relative;
     height:100px;
-    background-color:yellow;
     overflow: hidden;
 }
 .opacity{
@@ -73,24 +69,37 @@ img{
     z-index: 100;
 }
 .imgcontainar{
-    position: relative;
+    position: absolute;
     }
 .skyImg{
     position: absolute;
     top: -500px;
+    
 }
 
-.textContainar{
+.textContainar1{
     position: absolute;
     top: 0px;
     height: 100%;
     width: 100%;
-    line-height: 50px;
-    text-align: center;
+    line-height: 60px;
+    text-align:left;
     font-size: 60px;
     color: white;
     z-index: 120;
 }
+.textContainar2{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    text-align:right;
+    font-size: 30px;
+    color: white;
+    z-index: 120;
+}
+
 
 
 .text{
@@ -108,17 +117,8 @@ img{
     width: 100%;
 }
 
-/* #canvas-image-blending { */
-    /* background-size: cover; */
-    /* position: absolute; */
-    /* display: block; */
-    /* width: 100%;
-    height: 100%; */
-    /* top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; */
-/* }  */
+
+
 /* body {
     background-size: cover;
     height: 100%;
@@ -126,11 +126,11 @@ img{
     position:fixed;
 } */
 
-background
+
 #canvas-image-blending {
-    background: url(../images/space.jpeg);
+
     background-size: cover; 
-    position: absolute;
+
     width: 100%;
     height: 100%; 
     top: 0;
@@ -139,3 +139,33 @@ background
 
 }
 
+.button {
+    height: 500px;
+    width: 100%;
+}
+
+element.style {
+    display: none;
+}
+
+#myImg {
+
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* #myImg: hover {opacity: 0.7;} */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    /* padding-top: 100px; */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(102, 192, 60);
+}
