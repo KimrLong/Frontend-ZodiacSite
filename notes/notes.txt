@@ -27,3 +27,5 @@ location_id=Lisbon
 We can right click on ANY part of the API information and find out exactly how to get there. 
 
 We should decide which images to use and which exact direction to go in using the API information that we have.
+
+Make the triple CSS page and then use the Travel API to connect with it.
