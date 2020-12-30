@@ -19,6 +19,8 @@ fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/", {
 	console.error(err);
 });
 
+<<<<<<< HEAD
+=======
 
 
 // function newFunction (month){
@@ -33,6 +35,7 @@ fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/", {
 
 
 
+>>>>>>> 376dc13477010e0bc10e29f569faf593e5dc1d52
 var Cap = "2000-01-17"
 var Aqu = "2000-02-17"
 var Pisces = "2000-03-17"
