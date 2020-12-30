@@ -20,7 +20,14 @@ img{
 }
 .zodiacImg:hover {
     background-color: #d3ddd3;
-            color: rgb(146, 88, 88);
+    color: rgb(146, 88, 88);
+    cursor:pointer;
+    text-decoration: none;
+    transition: .3s;
+}
+#aries:hover{
+    opacity:1.3;
+
 }
 
 
