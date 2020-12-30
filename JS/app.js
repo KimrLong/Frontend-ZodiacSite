@@ -120,11 +120,11 @@ let tavelInfo =
 
 
 
-var aries1 = document.querySelector('#aries')
-aries1.addEventListener('click',()=>{
-	document.location.href = "travel.html"
-	newFunc(Aries)
-})
+// var aries1 = document.querySelector('#aries')
+// aries1.addEventListener('click',()=>{
+// 	document.location.href = "travel.html"
+// 	newFunc(Aries)
+// })
 
 var taurus1 = document.querySelector('#taurus')
 taurus1.addEventListener('click',()=>{
