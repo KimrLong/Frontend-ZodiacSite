@@ -1,103 +1,130 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Title</title>
+    
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- triple -->
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Triple Panel Image Slider with jQuery and CSS3</title>
+        <meta name="description" content="Triple Panel Image Slider with jQuery and CSS3 and a 3D look" />
+        <meta name="keywords" content="css3, image slider, jquery, 3d, 3dtransform, triple, transition, translate" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300|Prata' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="JS/modernizr.custom.26887.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <noscript>
+			<link rel="stylesheet" type="text/css" href="css/noscript.css" />
+		</noscript>
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+        <!-- end of triple head  -->
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
     
 </head>
+
     <body>
 
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
-<body>
 
+        <!-- triple code  -->
 
-    <p></p>
-    <div class="locations-Var"></div>
-    <!-- <a href="https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj"> Click here for Travel info.</a> -->
-    <script>
-    // function zodiacInfo(){
-    $(()=>{
-        //only use the the poi, give the user a list of choice to choose from.
-        //array variables for the different locations for the user.
-        let locationsArr = [];
-        let urlVariable = "";
-        let cityNames = ["Italy" ,"Paris", "Dubai", "Peru", "Bali", "Libson", "Zambia", "Cairo", "Brazil", "Salvador", "Montego_Bay"]
-        let event = ["city_walk", "poi", "location","location_id" ]
-        // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
-        // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?part_of=Greece&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
-        urlVariable = fetch(`https://www.triposo.com/api/20201111/${event[1]}.json?&${event[3]}=${cityNames[8]}&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
-        locationsArr.push(urlVariable);
-        console.log(locationsArr);
-        let promiseTest = Promise.all(locationsArr);
-        console.log(promiseTest);
+        <div class="container">
+		
+			<!-- Codrops top bar -->
+            <div class="codrops-top">
+                <a href="http://tympanus.net/Tutorials/CircleHoverEffects/">
+                    <strong>&laquo; Previous Demo: </strong>Circle Hover Effects
+                </a>
+                <span class="right">
+					<a href="http://www.flickr.com/photos/geishaboy500/">Images by geishaboy500</a>
+                    <a href="http://tympanus.net/codrops/2012/08/16/triple-panel-image-slider/">
+                        <strong>Back to the Codrops Article</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
+			
+			<header>
+				
+				<h1><strong>Triple Panel</strong> Image Slider</h1>
+				<h2>A jQuery image slider with three panels and 3D look</h2>
+				
+				<div class="support-note"><!-- let's check browser support with modernizr -->
+					<span class="no-cssanimations">CSS animations are not supported in your browser</span>
+					<span class="no-csstransforms">CSS transforms are not supported in your browser</span>
+					<span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span>
+					<span class="no-csstransitions">CSS transitions are not supported in your browser</span>
+					<span class="no-generatedcontent">CSS Generated Content is not supported in your browser</span>
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+				
+			</header>
+			
+			<div class="main">
+			
+				<div class="fs-slider" id="fs-slider">
+					
+					<figure>
+						<img src="images/1.jpg" alt="image01" />
+						<figcaption>
+							<h3>Eloquence</h3>
+							<p>American apparel flexitarian put a bird on it, mixtape typewriter irony aesthetic. </p>
+						</figcaption>
+					</figure>
+					
+					<figure>
+						<img src="images/2.jpg" alt="image02" />
+						<figcaption>
+							<h3>Quintessential</h3>
+							<p>Cardigan craft beer mixtape, skateboard forage fixie truffaut messenger bag. </p>
+						</figcaption>
+					</figure>
+					
+					<figure>
+						<img src="images/3.jpg" alt="image03" />
+						<figcaption>
+							<h3>Surreptitious</h3>
+							<p>Truffaut iphone flexitarian, banh mi thundercats cliche wolf biodiesel gastropub. </p>
+						</figcaption>
+					</figure>
+					
+					<figure>
+						<img src="images/4.jpg" alt="image04" />
+						<figcaption>
+							<h3>Imbroglio</h3>
+							<p>Scenester fixie pickled, shoreditch fugiat enim craft beer retro mustache.</p>
+						</figcaption>
+					</figure>
+					
+					<figure>
+						<img src="images/5.jpg" alt="image05" />
+						<figcaption>
+							<h3>Lissome</h3>
+							<p>Aute sunt aliqua do sapiente. Food truck ut sustainable thundercats four loko.</p>
+						</figcaption>
+					</figure>
+					
+				</div><!-- /fs-slider -->
+			
+			</div>
+			
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript" src="JS/jquery.imgslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
 
-        promiseTest.then((arrayResults) =>{
-            return Promise.all(arrayResults.map(char=>{
-            return char.json()
-        }))
+				$( '#fs-slider' ).imgslider();
+
+			});
+        </script>
         
-    })
-    .then((dataOfArray) =>{
-            console.log(dataOfArray)
-            // console.log(dataOfArray[0].results[0].images[0].source_url); // how to acces an image
-            console.log(dataOfArray[0].results[0]);
+        <!-- end of the triple code in the body  -->
 
-            // let location  = [dataOfArray[0].results[0]]
-
-            // let $locationsVar = $(".locations-Var");
-            // let liTag = location.map((char) =>{
-
-            //     return `<a href="${char.urlVariable}" class="locations-Var"> Test Comment</a>`
-            // })
-            // $locationsVar.html(liTag.join(""))
-            // let $div = $(".locations-Var")
-    })
-
-}
-
-        // urlVariable.forEach(url =>{
-        //     $.get(url)
-        // .done((response) =>{
-        //     let $result = $(response).find('.id')
-        //         alert($result)
-            // for(let v of $result){
-            //     try{
-            //         console.log(``)
-            //     }
-            //     catch{}
-            // }
-            
-
-    //     })
-
-    // })
-
-
-
-    //     })
-
-            )
-    </script>
-
-
-    <script src="JS/app.js"></script>
-
+    
 </body>
 </html>
