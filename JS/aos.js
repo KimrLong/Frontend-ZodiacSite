@@ -1,8 +1,7 @@
- 
- 
+
 $(()=>{
- 
- 
+
+// if this is not showing then the JS is not working.
   var granimInstance = new Granim({
     element: '#canvas-image-blending',
     direction: 'top-bottom',
