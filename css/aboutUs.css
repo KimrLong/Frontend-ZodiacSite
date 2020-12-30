@@ -55,3 +55,14 @@ body {
       display: block;
     }
   }
+
+  
+a:link, a:visited {
+    
+  color: white;
+  padding: 14px 25px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+ 
+}

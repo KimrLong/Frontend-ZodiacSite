@@ -101,8 +101,17 @@ img{
     font-size: 30px;
     color: white;
     z-index: 120;
+    
 }
-
+a:link, a:visited {
+    
+    color: white;
+    padding: 14px 25px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    
+  
 
 
 .text{
@@ -120,12 +129,15 @@ img{
     width: 100%;
 }
 
+
+
 /* body {
     background-size: cover;
     height: 100%;
     width: 100%;
     position:fixed;
 } */
+
 #canvas-image-blending {
 
     background-size: cover; 

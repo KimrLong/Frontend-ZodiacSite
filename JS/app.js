@@ -19,12 +19,6 @@ fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/", {
 	console.error(err);
 });
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> kanny
-
 var Cap = "2000-01-17"
 var Aqu = "2000-02-17"
 var Pisces = "2000-03-17"
