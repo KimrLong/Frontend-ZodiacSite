@@ -1,3 +1,46 @@
+/*
+Edit
+navy: 003348
+maroon: 8A0000 or 660A0B
+golden: DAA520
+Charcoal: 283845
+*/
+
+/* background colors */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color:#e5e5e5;
+
+   
+}
+.cp-bg-navy {
+background-color: #003348;
+}
+
+.cp-bg-maroon {
+background-color: #660A0B;
+}
+
+.cp-bg-golden {
+    background-color:#DAA520;
+    }
+
+.cp-bg-Charcoal {
+background-color: #283845;
+}
+
+
+  /* font colors */
+.cp-text-black {
+color: black;
+}
+
+.cp-text-brown {
+color: white;
+}
+
 
 .section {
     width: 100%;
@@ -20,7 +63,14 @@ img{
 }
 .zodiacImg:hover {
     background-color: #d3ddd3;
-            color: rgb(146, 88, 88);
+    color: rgb(146, 88, 88);
+    cursor:pointer;
+    text-decoration: none;
+    transition: .3s;
+}
+#aries:hover{
+    opacity:1.3;
+
 }
 
 
@@ -45,6 +95,38 @@ img{
     
 }
 
+.textContainar1{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    text-align:left;
+    font-size: 60px;
+    color: white;
+    z-index: 120;
+}
+.textContainar2{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    text-align:right;
+    font-size: 30px;
+    color: white;
+    z-index: 120;
+    
+}
+a:link, a:visited {
+    
+    color: white;
+    padding: 14px 25px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    
+}
 @-webkit-keyframes pulse {
     0% {
     -webkit-transform: translate(0, 0);
@@ -68,21 +150,6 @@ img{
                 transform: translate(0, 0); } }
 
 
-
-.text{
-    font-size:xx-large;
-    font-family: "Aquifer", Courier, Cursive;
-    color: black;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 
 
 .backgrounds {
