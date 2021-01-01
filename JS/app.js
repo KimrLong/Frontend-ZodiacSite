@@ -1,25 +1,4 @@
-fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/", {
-    "method": "POST",
-    "headers": {
-        "content-type": "application/x-www-form-urlencoded",
-        "x-rapidapi-key": "5ebc03e641msh91de1db69ede71dp13e0f0jsnb8c37847f3b1",
-        "x-rapidapi-host": "astrology-horoscope.p.rapidapi.com"
-    },
-    "body": {
-        "mystic_dob": "1987-05-21",
-        "mystic_name": "John"
-    }
-})
-.then(response => {
-    console.log(response);
-})
-.catch(err => {
-    console.error(err);
-});
-
-
-
-
+//date value for API call
 
 var Cap = "2000-01-17"
 var Aqu = "2000-02-17"
@@ -35,7 +14,7 @@ var Scorp = "2000-11-17"
 var Sagg = "2000-12-17"
 
 
-
+//API call information
 async function newFunc(zodiac){
 var opts = {
 	mystic_dob: zodiac
@@ -63,43 +42,76 @@ var travelInfo =
 		})
 		console.log(travelInfo)
 		return travelInfo
-
 	}
 
+// enter modal function here//
 
+$(()=>{
 
-var taurus1 = document.querySelector('#taurus')
-taurus1.addEventListener('click',()=>{
-    newFunc(Taurus)
+    $(".cardClick").click(async (e)=> {
+        var birthDate;
+        if (e.target.id == "aries"){
+		birthDate = await newFunc(Aries)
+		}
+		else if (e.target.id == "taurus"){
+				birthDate = await newFunc(Taurus)
+		}
+		else if (e.target.id == "gemini"){
+		birthDate = await newFunc(Gemini)
+		}
+		else if(e.target.id == "cancer"){
+		birthDate = await newFunc(Cancer)
+		}
+		else if(e.target.id == "leo"){
+		birthDate = await newFunc(Leo)
+		}
+		else if(e.target.id == "virgo"){
+		birthDate = await newFunc(Virgo)
+		}
+		else if(e.target.id == "libra"){
+		birthDate = await newFunc(Libra)
+		}
+		else if(e.target.id == "scorpio"){
+		birthDate = await newFunc(Scorp)
+		}
+		else if(e.target.id == "sagittarius"){
+		birthDate = await newFunc(Sagg)
+		}
+		else if(e.target.id == "capricorn"){
+		birthDate = await newFunc(Cap)
+		}
+		else if(e.target.id == "aquarius"){
+		birthDate = await newFunc(Aqu)
+		}
+		else if(e.target.id == "pisces"){
+		birthDate = await newFunc(Pisces)
+		}
+
+        console.log(e.target.id)
+        console.log("modal")
+        var myHeading = "<p>I Am Added Dynamically </p>"
+        $("#modal-body").html(myHeading + birthDate)
+        $('#myModal').modal('show')
+        $(".btn").click(function(){
+            $("#myModal").modal('hide')
+        })
+    });
 })
 
-var scorpio1 = document.querySelector('#scorpio')
-scorpio1.addEventListener('click',()=>{
-	newFunc(Scorp)
-})
-
-var sagittarius1 = document.querySelector('#sagittarius')
-sagittarius1.addEventListener('click',()=>{
-	newFunc(Aries)
-})
-
-var aries1 = document.querySelector('#capricorn')
-aries1.addEventListener('click',()=>{
-	newFunc(Aries)
-})
-
-var aries1 = document.querySelector('#aquarius')
-aries1.addEventListener('click',()=>{
-	newFunc(Sagg)
-})
-
-var pisces1 = document.querySelector('#pisces')
-pisces1.addEventListener('click',()=>{
-	newFunc(Pisces)
-})
-
-console.log(newFunc(Virgo));
-
+// let modalBtn = document.getElementById("myModal")
+// let modal = document.querySelector(".modal")
+// let closeBtn = document.querySelector(".close-btn")
+// modalBtn.onclick = function(){
+//   modal.style.display = "block"
+// }
+// closeBtn.onclick = function(){
+//   modal.style.display = "none"
+// }
+// window.onclick = function(e){
+//   if(e.target == modal){
+//     modal.style.display = "none"
+//   }
+// }
 
 
 

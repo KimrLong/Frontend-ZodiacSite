@@ -29,3 +29,58 @@ We can right click on ANY part of the API information and find out exactly how t
 We should decide which images to use and which exact direction to go in using the API information that we have.
 
 Make the triple CSS page and then use the Travel API to connect with it.
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div id="modalHeader" class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div id="modalBody" class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    		// else if (e.target.id == "taurus1"){
+		// 		birthDate = await newFunc(Taurus)
+		// }
+		// else if (e.target.id == "gemini1"){
+		// birthDate = await newFunc(Gemini)
+		// }
+		// else if(e.target.id == "cancer1"){
+		// birthDate = await newFunc(Cancer)
+		// }
+		// else if(e.target.id == "leo1"){
+		// birthDate = await newFunc(Leo)
+		// }
+		// else if(e.target.id == "virgo1"){
+		// birthDate = await newFunc(Virgo)
+		// }
+		// else if(e.target.id == "Libra1"){
+		// birthDate = await newFunc(Libra)
+		// }
+		// else if(e.target.id == "scorpio1"){
+		// birthDate = await newFunc(Scorp)
+		// }
+		// else if(e.target.id == "saggitarius1"){
+		// birthDate = await newFunc(Sagg)
+		// }
+		// else if(e.target.id == "capricorn1"){
+		// birthDate = await newFunc(Cap)
+		// }
+		// else if(e.target.id == "aquarius1"){
+		// birthDate = await newFunc(Aqu)
+		// }
+		// else if(e.target.id == "pisces1"){
+		// birthDate = await newFunc(Pisces)
+		// }
