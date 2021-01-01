@@ -51,36 +51,17 @@ Make the triple CSS page and then use the Travel API to connect with it.
         </div>
     </div>
 
-    		// else if (e.target.id == "taurus1"){
-		// 		birthDate = await newFunc(Taurus)
-		// }
-		// else if (e.target.id == "gemini1"){
-		// birthDate = await newFunc(Gemini)
-		// }
-		// else if(e.target.id == "cancer1"){
-		// birthDate = await newFunc(Cancer)
-		// }
-		// else if(e.target.id == "leo1"){
-		// birthDate = await newFunc(Leo)
-		// }
-		// else if(e.target.id == "virgo1"){
-		// birthDate = await newFunc(Virgo)
-		// }
-		// else if(e.target.id == "Libra1"){
-		// birthDate = await newFunc(Libra)
-		// }
-		// else if(e.target.id == "scorpio1"){
-		// birthDate = await newFunc(Scorp)
-		// }
-		// else if(e.target.id == "saggitarius1"){
-		// birthDate = await newFunc(Sagg)
-		// }
-		// else if(e.target.id == "capricorn1"){
-		// birthDate = await newFunc(Cap)
-		// }
-		// else if(e.target.id == "aquarius1"){
-		// birthDate = await newFunc(Aqu)
-		// }
-		// else if(e.target.id == "pisces1"){
-		// birthDate = await newFunc(Pisces)
-		// }
+// let modalBtn = document.getElementById("myModal")
+// let modal = document.querySelector(".modal")
+// let closeBtn = document.querySelector(".close-btn")
+// modalBtn.onclick = function(){
+//   modal.style.display = "block"
+// }
+// closeBtn.onclick = function(){
+//   modal.style.display = "none"
+// }
+// window.onclick = function(e){
+//   if(e.target == modal){
+//     modal.style.display = "none"
+//   }
+// }
