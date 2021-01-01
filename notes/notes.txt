@@ -29,3 +29,39 @@ We can right click on ANY part of the API information and find out exactly how t
 We should decide which images to use and which exact direction to go in using the API information that we have.
 
 Make the triple CSS page and then use the Travel API to connect with it.
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div id="modalHeader" class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div id="modalBody" class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+// let modalBtn = document.getElementById("myModal")
+// let modal = document.querySelector(".modal")
+// let closeBtn = document.querySelector(".close-btn")
+// modalBtn.onclick = function(){
+//   modal.style.display = "block"
+// }
+// closeBtn.onclick = function(){
+//   modal.style.display = "none"
+// }
+// window.onclick = function(e){
+//   if(e.target == modal){
+//     modal.style.display = "none"
+//   }
+// }
