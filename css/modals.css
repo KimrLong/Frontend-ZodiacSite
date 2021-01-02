@@ -1,29 +1,46 @@
+.top{
+    top: 0px;
+}
+
+.z10{
+    z-index: 10;
+}
+.z15{
+    z-index: 15;
+}
+.z20{
+    z-index: 20;
+}
+.opacity{
+    opacity: 10%;
+}
+
+
+
+
+
+
+
+.pos-f-t {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: $zindex-navbar-fixed;
+  }
+
 .navbar,
 .navbar-inverse {
   border-radius: 0;
   border: none;
   margin-bottom: 0;
   min-height: 80px;
+  background-color:transparent;
+}
+.custom-toggler .navbar-toggler{
+    border-color:#FF4081;
 }
 
-.nav li {
-  display: inline;
-  color: #FF4081;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-  color:#FF4081;
-  font-family: Lato;
-  font-size: 1.7em;
-  font-weight: 300;
-  padding: 30px 25px 33px 25px;
-}
-
-.navbar-inverse .navbar-nav li a:hover {
-  background-color: #444444;
-  transition: 0.7s all linear;
-  height: 100%;
-}
 
 body {font-family: Arial, Helvetica, sans-serif;}
 
@@ -60,18 +77,19 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .btn {
     text-align: center;
-    padding-right: 08%;
+    justify-content: center ;
     font-weight: bold;
     font-size: 18px;
     color: #FF4081;
     font-family: 'Courier New', Courier, monospace;
-    border: .2px solid;
-    border-color:#444444;
+
 }
+
 
 /* The Close Button */
 .close {
-    display: none;
+    z-index: 5;
+    display: auto;
     cursor: pointer;
     color: #FF4081;
 }

@@ -11,19 +11,9 @@
 
 </head>
 
-<div class="pos-f-t">
-<div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-    <h5 class="text-white h4">Collapsed content</h5>
-    <span class="text-muted">Toggleable via the navbar brand.</span>
-    </div>
-</div>
-<nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-</nav>
-</div>
+
+
+
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -37,125 +27,122 @@
     </div>
     </div>
 </nav> -->
-
-<body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
-    <div class="backgrounds overlay">
-        <div class="background aos-init aos-animate" data-aos="fade-in" data-aos-duration="1650" date-aos-anchor =".section--hero" style="background-image: url('images/space.jpeg');"></div>
-        
-    </div>
-    <header class="hero">
-        <div class="hero-center">
-            <a href="AboutUs.html" class ="aos-init aos-animate" data-aos="zoom-out" data-aos-delay="1500">Our story</a>
-            <h1 class="hero__logo" data-aos="zoom-in"> Your Zodiac Travel Destination </h1>
-            <h2 class="hero__text" data-aos="fade-up" data-aos-delay="400">
-                Finding your 'where' based on your 'who'
-            </h2>
+<!--container fluid-->
+<div class="container-fluid p-0">
+    <body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+        <div class="backgrounds overlay">
+            <div class="background aos-init aos-animate" data-aos="fade-in" data-aos-duration="1650" date-aos-anchor =".section--hero" style="background-image: url('images/space.jpeg');"></div>
+            
         </div>
-        <span class="hero__scroll aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">Begin your journey below
-        <br>
-        <i class="chevron bottom">
-        </i>
+        <header class="hero">
+            <div class="hero-center">
+                <!-- <a href="AboutUs.html" class ="aos-init aos-animate" data-aos="zoom-out" data-aos-delay="1500">Our story</a> -->
+                <h1 class="hero__logo" data-aos="zoom-in"> Your Zodiac Travel Destination </h1>
+                <h2 class="hero__text" data-aos="fade-up" data-aos-delay="400">
+                    Finding your 'where' based on your 'who'
+                </h2>
+            </div>
+            <span class="hero__scroll aos-init aos-animate" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">Begin your journey below
+            <br>
+            <i class="chevron bottom"></i>
+            </span>
+        </header>
 
-    </span>
 
-
-
-    </header>
-
-
-    
+    <!--modals-->
         <div id="myModal" class="modal fade" role='dialog'>
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body" id="modal-body">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-
+                        <div id="withX"></div>
                     </div>         
                 </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Click here to start your journey</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Your journey starts here</button>
                     </div>
                 </div>
             </div>
         </div>
 
 
+`<!--cards-->
+        <div class="row cardClick align-items-center justify-content-start mx-5 ">
+            <div class="col-12 d-flex align-items-center justify-content-start mx-5 ">
+                <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="aries" class="zodiacImg" src='images/aries.png' alt='aries' data-aos="zoom-in-right" data-aos-delay="650">
+            </div>
+        </div>
+        <div class="row cardClick align-items-center justify-content-end mx-5 ">
+            <div class="col-12 d-flex align-items-center justify-content-end mx-5 ">
+                <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="taurus" class="zodiacImg" src='images/taurus.png' alt='taurus' data-aos="zoom-in-left" data-aos-delay="650">
+            </div>
+        </div>
+        <div class="row cardClick align-items-center justify-content-start mx-5 ">
+            <div class="col-12 d-flex align-items-center justify-content-start mx-5 ">
+                <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="gemini" class="zodiacImg" src='images/gemini.png' alt='gemini' data-aos="zoom-in-right" data-aos-delay="650">
+            </div>
+        </div>
+        <div class="row cardClick align-items-center justify-content-end mx-5 ">
+            <div class="col-12 d-flex align-items-center justify-content-end mx-5 ">
+                <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="cancer" class="zodiacImg" src='images/cancer.png' alt='cancer' data-aos="zoom-in-left" data-aos-delay="650">
+            </div>
+        </div>
+        <div class="row cardClick align-items-center justify-content-start mx-5 ">
+            <div class="col-12 d-flex align-items-center justify-content-start mx-5 ">
+                <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="leo" class="zodiacImg" src='images/leo.png' alt='leo' data-aos="zoom-in-right" data-aos-delay="650">
+            </div>
+        </div>
+        <div class="row cardClick align-items-center justify-content-end mx-5 ">
+            <div class="col-12 d-flex align-items-center justify-content-end mx-5 ">
+                <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="virgo" class="zodiacImg" src='images/virgo.png' alt='virgo' data-aos="zoom-in-left" data-aos-delay="650">
+            </div>
+        </div>
+        <div class="row cardClick align-items-center justify-content-start mx-5 ">
+            <div class="col-12 d-flex align-items-center justify-content-start mx-5 ">
+                <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="libra" class="zodiacImg" src='images/libra.png' alt='libra' data-aos="zoom-in-right" data-aos-delay="650">
+            </div>
+        </div>
+        <div class="row cardClick align-items-center justify-content-end mx-5 ">
+            <div class="col-12 d-flex align-items-center justify-content-end mx-5 ">
+                <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="scorpio" class="zodiacImg" src='images/scorpio.png' alt='scorpio' data-aos="zoom-in-left" data-aos-delay="650">
+            </div>
+        </div>
+        <div class="row cardClick align-items-center justify-content-start mx-5 ">
+            <div class="col-12 d-flex align-items-center justify-content-start mx-5 ">
+                <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="sagittarius" class="zodiacImg" src='images/sagittarius.png' alt='sagittarius' data-aos="zoom-in-right" data-aos-delay="650">
+            </div>
+        </div>
+        <div class="row cardClick align-items-center justify-content-end mx-5 ">
+            <div class="col-12 d-flex align-items-center justify-content-end mx-5 ">
+                <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="capricorn" class="zodiacImg" src='images/capricorn.png' alt='capricorn' data-aos="zoom-in-left" data-aos-delay="650">
+            </div>
+        </div>
+        <div class="row cardClick align-items-center justify-content-start mx-5 ">
+            <div class="col-12 d-flex align-items-center justify-content-start mx-5 ">
+                <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="aquarius" class="zodiacImg" src='images/aquarius.png' alt='aquarius' data-aos="zoom-in-right" data-aos-delay="650">
+            </div>
+        </div>
+        <div class="row cardClick align-items-center justify-content-end mx-5 ">
+            <div class="col-12 d-flex align-items-center justify-content-end mx-5 ">
+                <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="pisces" class="zodiacImg" src='images/pisces.png' alt='pisces' data-aos="zoom-in-left" data-aos-delay="650">
+            </div>
+        </div>
+    </div>
+</div>
 
-    <div class="row cardClick align-items-center justify-content-start mx-5 ">
-        <div class="col-12 d-flex align-items-center justify-content-start mx-5 ">
-            <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="aries" class="zodiacImg" src='images/aries.png' alt='aries' data-aos="zoom-in-right" data-aos-delay="650">
+<!--nav bar -->
+    <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <a href="AboutUs.html" >Our Story</a>
+            <span class="text-muted">The masterminds behind your dream travel destination</span>
         </div>
     </div>
-    <div class="row cardClick align-items-center justify-content-end mx-5 ">
-        <div class="col-12 d-flex align-items-center justify-content-end mx-5 ">
-            <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="taurus" class="zodiacImg" src='images/taurus.png' alt='taurus' data-aos="zoom-in-left" data-aos-delay="650">
-        </div>
-    </div>
-    <div class="row cardClick align-items-center justify-content-start mx-5 ">
-        <div class="col-12 d-flex align-items-center justify-content-start mx-5 ">
-            <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="gemini" class="zodiacImg" src='images/gemini.png' alt='gemini' data-aos="zoom-in-right" data-aos-delay="650">
-        </div>
-    </div>
-    <div class="row cardClick align-items-center justify-content-end mx-5 ">
-        <div class="col-12 d-flex align-items-center justify-content-end mx-5 ">
-            <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="cancer" class="zodiacImg" src='images/cancer.png' alt='cancer' data-aos="zoom-in-left" data-aos-delay="650">
-        </div>
-    </div>
-    <div class="row cardClick align-items-center justify-content-start mx-5 ">
-        <div class="col-12 d-flex align-items-center justify-content-start mx-5 ">
-            <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="leo" class="zodiacImg" src='images/leo.png' alt='leo' data-aos="zoom-in-right" data-aos-delay="650">
-        </div>
-    </div>
-    <div class="row cardClick align-items-center justify-content-end mx-5 ">
-        <div class="col-12 d-flex align-items-center justify-content-end mx-5 ">
-            <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="virgo" class="zodiacImg" src='images/virgo.png' alt='virgo' data-aos="zoom-in-left" data-aos-delay="650">
-        </div>
-    </div>
-    <div class="row cardClick align-items-center justify-content-start mx-5 ">
-        <div class="col-12 d-flex align-items-center justify-content-start mx-5 ">
-            <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="libra" class="zodiacImg" src='images/libra.png' alt='libra' data-aos="zoom-in-right" data-aos-delay="650">
-        </div>
-    </div>
-    <div class="row cardClick align-items-center justify-content-end mx-5 ">
-        <div class="col-12 d-flex align-items-center justify-content-end mx-5 ">
-            <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="scorpio" class="zodiacImg" src='images/scorpio.png' alt='scorpio' data-aos="zoom-in-left" data-aos-delay="650">
-        </div>
-    </div>
-    <div class="row cardClick align-items-center justify-content-start mx-5 ">
-        <div class="col-12 d-flex align-items-center justify-content-start mx-5 ">
-            <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="sagittarius" class="zodiacImg" src='images/sagittarius.png' alt='sagittarius' data-aos="zoom-in-right" data-aos-delay="650">
-        </div>
-    </div>
-    <div class="row cardClick align-items-center justify-content-end mx-5 ">
-        <div class="col-12 d-flex align-items-center justify-content-end mx-5 ">
-            <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="capricorn" class="zodiacImg" src='images/capricorn.png' alt='capricorn' data-aos="zoom-in-left" data-aos-delay="650">
-        </div>
-    </div>
-    <div class="row cardClick align-items-center justify-content-start mx-5 ">
-        <div class="col-12 d-flex align-items-center justify-content-start mx-5 ">
-            <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="aquarius" class="zodiacImg" src='images/aquarius.png' alt='aquarius' data-aos="zoom-in-right" data-aos-delay="650">
-        </div>
-    </div>
-    <div class="row cardClick align-items-center justify-content-end mx-5 ">
-        <div class="col-12 d-flex align-items-center justify-content-end mx-5 ">
-            <img height="100" width="80" data-toggle="modal" data-target="#myModal" id ="pisces" class="zodiacImg" src='images/pisces.png' alt='pisces' data-aos="zoom-in-left" data-aos-delay="650">
-        </div>
-    </div>
-<!--start of modal info-->
-
-    <!--Modal ends here--->
-    
-
-
-        
-    </div>
-
-
-
-
-
-
-        
+    <nav class="navbar sticky-top navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
     </div>
 
 
