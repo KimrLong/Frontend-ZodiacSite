@@ -89,7 +89,7 @@ $(()=>{
 
         console.log(e.target.id)
         console.log("modal")
-        var myHeading = "<p>I Am Added Dynamically </p>"
+        var myHeading = "<h2>Travel Habits</h2>" //`${}`
         $("#modal-body").html(myHeading + birthDate)
         $('#myModal').modal('show')
         $(".btn").click(function(){
