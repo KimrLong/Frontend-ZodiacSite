@@ -86,15 +86,18 @@ $(()=>{
 		else if(e.target.id == "pisces"){
 		birthDate = await newFunc(Pisces)
 		}
+		localStorage.zodiac = e.target.id
 
-        console.log(e.target.id)
-        console.log("modal")
-        var myHeading = "<h2>Travel Habits</h2>" //`${}`
-        $("#withX").html(myHeading + birthDate)
+        // var myHeading = "<h2>Travel Habits</h2>" //`${}`
+		$("#withX").html(e.target.id)
+		$("#nextX").html(birthDate)
         $('#myModal').modal('show')
         $(".btn").click(function(){
-            $("#myModal").modal('hide')
-        })
+			$("#myModal").modal('hide')
+			
+		})
+		console.log(localStorage.zodiac)
+        console.log("modal")
     });
 })
 
