@@ -10,36 +10,25 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <link rel="stylesheet" href="css/travel.css">
 </head>
-<body>
-    
     <body>
-        Below is the template that will be used for the carosul
-                </div> example 
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <ol class="carousel-indicators">
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                        <div id="testImage" class="carousel-item resizeImage active">
-
-                        </div>
-                        <div class="carousel-item">
-                        </div>
-                        <div class="carousel-item">
-                        </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </a>
-                    </div>
-                    
+        Below is the template that will be used for the carosul example 
+        <div class="d-none d-md-block position-absolute top z10 embed-responsive embed-responsive">
+            <!--image-->
+            <!-- <iframe width="100%"  src="https://spothopper-static.s3.amazonaws.com/website_videos/crispina%20ristorante_low.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen volume="0"></iframe> -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                <div id = "class="carousel-item">
+                <img class="d-block w-100" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/128407780_10109827996388525_5393865357689867515_o.jpg?_nc_cat=109&ccb=2&_nc_sid=e3f864&_nc_ohc=MN_1gjLGhGIAX9_1Oif&_nc_ht=scontent-atl3-1.xx&oh=29b4008d9016cb06e744e2416ed6e553&oe=5FEE138E" alt="">
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/478272_472288496145567_508243713_o.jpg?_nc_cat=110&ccb=2&_nc_sid=d2e176&_nc_ohc=luc6zydjfrMAX9lvzav&_nc_ht=scontent-atl3-1.xx&oh=1dc995b6c57aba63cb2e938457d3b1d2&oe=5FEDF2C0" alt="">
+                </div>
+                <div class="carousel-item">
+                <img class="d-block w-100" src="https://image.shutterstock.com/image-photo/hot-big-pepperoni-pizza-tasty-260nw-751979947.jpg" alt="">
+                </div>
+            </div>
+            </div>
+        </div> (edited) 
             <!-- <a href="https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj"> Click here for Travel info.</a> -->
         
             <script>
@@ -53,7 +42,7 @@
                 let event = ["city_walk", "poi", "location","location_id" ]
                 // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
                 // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?part_of=Greece&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
-                urlVariable = fetch(`https://www.triposo.com/api/20201111/${event[1]}.json?&${event[3]}=${cityNames[0]}&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
+                urlVariable = fetch(`https://www.triposo.com/api/20201111/${event[1]}.json?&${event[3]}=${cityNames[6]}&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
                 locationsArr.push(urlVariable);
                 console.log(locationsArr);
                 let promiseTest = Promise.all(locationsArr);
@@ -72,8 +61,13 @@
                     img.src = dataOfArray[0].results[0].images[0].source_url;
                     img2.src = dataOfArray[0].results[0].images[1].source_url;
                     img3.src = dataOfArray[0].results[0].images[2].source_url;
+                    // resizing.appendChild(img)
                     image.appendChild(img)
+                    image2.appendChild(img2)
+                    image3.appendChild(img3)
                     console.log(img);
+                    console.log(img2);
+                    console.log(img3);
                     // image.append(img);
                     // image2.append(img2);
                     // image3.append(img3);
