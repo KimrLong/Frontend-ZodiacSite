@@ -1,0 +1,15 @@
+
+.resizeImage{
+    width: 1200px ;
+
+}
+#testImage{
+    width:20%;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 2500px;
+    height: 1600px
+}

@@ -1,49 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Document</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+    <body>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <noscript>
-        <link rel="stylesheet" type="text/css" href="css/noscript.css" />
-    </noscript>
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-Below is the template that will be used for the carosul
-        <!-- <div id = "testImage">
-        </div> example 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </a>
-            </div> -->
-            
+    <div class="locations-Var"></div>
     <!-- <a href="https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj"> Click here for Travel info.</a> -->
-
     <script>
     // function zodiacInfo(){
     $(()=>{
@@ -55,25 +39,62 @@ Below is the template that will be used for the carosul
         let event = ["city_walk", "poi", "location","location_id" ]
         // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
         // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?part_of=Greece&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
-        urlVariable = fetch(`https://www.triposo.com/api/20201111/${event[1]}.json?&${event[3]}=${cityNames[0]}&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
+        urlVariable = fetch(`https://www.triposo.com/api/20201111/${event[1]}.json?&${event[3]}=${cityNames[8]}&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
         locationsArr.push(urlVariable);
         console.log(locationsArr);
         let promiseTest = Promise.all(locationsArr);
         console.log(promiseTest);
+
         promiseTest.then((arrayResults) =>{
             return Promise.all(arrayResults.map(char=>{
             return char.json()
         }))
-    .then((dataOfArray) =>{
-            let image = document.getElementById("testImage");
-            const img = document.createElement("img")
-            img.src = dataOfArray[0].results[0].images[0].source_url;
-            image.append(img)
+        
     })
-})
-})
+    .then((dataOfArray) =>{
+            console.log(dataOfArray)
+            // console.log(dataOfArray[0].results[0].images[0].source_url); // how to acces an image
+            console.log(dataOfArray[0].results[0]);
 
+            // let location  = [dataOfArray[0].results[0]]
+
+            // let $locationsVar = $(".locations-Var");
+            // let liTag = location.map((char) =>{
+
+            //     return `<a href="${char.urlVariable}" class="locations-Var"> Test Comment</a>`
+            // })
+            // $locationsVar.html(liTag.join(""))
+            // let $div = $(".locations-Var")
+    })
+
+}
+
+        // urlVariable.forEach(url =>{
+        //     $.get(url)
+        // .done((response) =>{
+        //     let $result = $(response).find('.id')
+        //         alert($result)
+            // for(let v of $result){
+            //     try{
+            //         console.log(``)
+            //     }
+            //     catch{}
+            // }
+            
+
+    //     })
+
+    // })
+
+
+
+    //     })
+
+            )
     </script>
+
+
+    <script src="JS/app.js"></script>
 
 </body>
 </html>
