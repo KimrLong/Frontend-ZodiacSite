@@ -16,16 +16,16 @@ img{
     height: 1600px
 }
 
-.z10{
+/* .z10{
     z-index: 10;
-}
+} */
 
 h3, h1, p{
     text-align: center;
     align-items: center;
     color: rgb(228, 83, 107)
 }
-h3{
+h3, h2{
     color: white;
     padding: 20px
     ;
@@ -35,5 +35,18 @@ img{
     border-style: none;
     width: 100px;
 }
-
+.navbar,
+.navbar-inverse {
+    border-radius: 0;
+    border: none;
+    margin-bottom: 0;
+    min-height: 80px;
+    background-color:transparent;
+}
+.pos-f-t {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 30;
 
