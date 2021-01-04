@@ -6,43 +6,76 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/travel.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/aos.css">
 </head>
+
+<div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+        <h5 class="text-white h4">Collapsed content</h5>
+        <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    </div>
+
     <body>
-        Below is the template that will be used for the carosul example 
-        <div class="d-none d-md-block position-absolute top z10 embed-responsive embed-responsive">
-            <!--image-->
-            <!-- <iframe width="100%"  src="https://spothopper-static.s3.amazonaws.com/website_videos/crispina%20ristorante_low.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen volume="0"></iframe> -->
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+            <div class="backgrounds overlay">
+                <div class="background aos-init aos-animate" data-aos="fade-in" data-aos-duration="1650" date-aos-anchor =".section--hero" style="background-image: url('images/jerry-larry-7uvixXrQkfw-unsplash.jpg');"></div>
+                
+            </div>
+        <p>words and text go here</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
                 <div class="carousel-inner">
-                <div id = "class="carousel-item">
-                <img class="d-block w-100" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/128407780_10109827996388525_5393865357689867515_o.jpg?_nc_cat=109&ccb=2&_nc_sid=e3f864&_nc_ohc=MN_1gjLGhGIAX9_1Oif&_nc_ht=scontent-atl3-1.xx&oh=29b4008d9016cb06e744e2416ed6e553&oe=5FEE138E" alt="">
+                <div class="carousel-item active">
+                    <img class="w-50 d-flex mx-auto" src="images/Capri.jpg" alt="First slide">
+                    <p>
+
+                    </p>
                 </div>
                 <div class="carousel-item">
-                <img class="d-block w-100" src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/478272_472288496145567_508243713_o.jpg?_nc_cat=110&ccb=2&_nc_sid=d2e176&_nc_ohc=luc6zydjfrMAX9lvzav&_nc_ht=scontent-atl3-1.xx&oh=1dc995b6c57aba63cb2e938457d3b1d2&oe=5FEDF2C0" alt="">
+                    <img class="w-50 d-flex mx-auto" src="images/Island-Capri-Italy.jpg" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                <img class="d-block w-100" src="https://image.shutterstock.com/image-photo/hot-big-pepperoni-pizza-tasty-260nw-751979947.jpg" alt="">
+                    <img class="w-50 d-flex mx-auto " src="images/space.jpeg" alt="Third slide">
                 </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
             </div>
-            </div>
-        </div> (edited) 
             <!-- <a href="https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj"> Click here for Travel info.</a> -->
         
             <script>
             // function zodiacInfo(){
-            $(()=>{
+            // $(()=>{
                 //only use the the poi, give the user a list of choice to choose from.
                 //array variables for the different locations for the user.
                 let locationsArr = [];
                 let urlVariable = "";
-                let cityNames = ["Italy" ,"Paris", "Dubai", "Peru", "Bali", "Libson", "Zambia", "Cairo", "Brazil", "Salvador", "Montego_Bay"]
+                let cityNames = ["Italy" ,"Paris", "Greece", "Peru", "Indonesia", "Portugal", "Zambia", "Egpyt", "Brazil", "Argentina", "Jamaica"]
                 let event = ["city_walk", "poi", "location","location_id" ]
                 // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
-                // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?part_of=Greece&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
-                urlVariable = fetch(`https://www.triposo.com/api/20201111/${event[1]}.json?&${event[3]}=${cityNames[6]}&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
+                urlVariable = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[0]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
+                // urlVariable = fetch(`https://www.triposo.com/api/20201111/${event[1]}.json?&${event[3]}=${cityNames[0]}&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
                 locationsArr.push(urlVariable);
                 console.log(locationsArr);
                 let promiseTest = Promise.all(locationsArr);
@@ -52,35 +85,44 @@
                     return char.json()
                 }))
             .then((dataOfArray) =>{
-                    var image = document.getElementById("testImage");
-                    var image2 = document.getElementById("testImage2");
-                    let image3 = document.getElementById("testImage3");
-                    const img = document.createElement("img");
-                    const img2 = document.createElement("img");
-                    const img3 = document.createElement("img");
-                    img.src = dataOfArray[0].results[0].images[0].source_url;
-                    img2.src = dataOfArray[0].results[0].images[1].source_url;
-                    img3.src = dataOfArray[0].results[0].images[2].source_url;
-                    // resizing.appendChild(img)
-                    image.appendChild(img)
-                    image2.appendChild(img2)
-                    image3.appendChild(img3)
-                    console.log(img);
-                    console.log(img2);
-                    console.log(img3);
+                    console.log(dataOfArray);
+
+                    let text = dataOfArray.map(obj =>{
+                                return   `<p>Testing this! ${dataOfArray[0].results[0].id}<p>`
+
+                                })
+                    let p = document.querySelector("p");
+                    p.innerHTML = text.join("");
+                    // var image = document.getElementById("testImage");
+                    // var image2 = document.getElementById("testImage2");
+                    // let image3 = document.getElementById("testImage3");
+                    // const img = document.createElement("img");
+                    // const img2 = document.createElement("img");
+                    // const img3 = document.createElement("img");
+                    // img.src = dataOfArray[0].results[0].images[0].source_url;
+                    // img2.src = dataOfArray[0].results[0].images[1].source_url;
+                    // img3.src = dataOfArray[0].results[0].images[2].source_url;
+                    // // resizing.appendChild(img)
+                    // image.appendChild(img)
+                    // image2.appendChild(img2)
+                    // image3.appendChild(img3)
+                    // console.log(img);
+                    // console.log(img2);
+                    // console.log(img3);
                     // image.append(img);
                     // image2.append(img2);
                     // image3.append(img3);
             })
         })
-        })
+        // })
         
             </script>
-        
     <!-- Optional JavaScript -->
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </body>
 </html>
