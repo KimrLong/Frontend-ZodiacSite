@@ -1,3 +1,4 @@
+
 //date value for API call
 var Cap = "2000-01-17"
 var Aqu = "2000-02-17"
@@ -89,3 +90,5 @@ $(()=>{
         console.log("modal")
     });
 })
+
+
