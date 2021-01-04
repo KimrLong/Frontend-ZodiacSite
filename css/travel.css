@@ -1,13 +1,15 @@
 
 .resizeImage{
-    width: 1200px ;
-
+    height: 200px ;
 }
+
 #testImage{
     width:20%;
 }
 
-img {
+
+
+img{
     vertical-align: middle;
     border-style: none;
     width: 2500px;
@@ -17,3 +19,21 @@ img {
 .z10{
     z-index: 10;
 }
+
+h3, h1, p{
+    text-align: center;
+    align-items: center;
+    color: rgb(228, 83, 107)
+}
+h3{
+    color: white;
+    padding: 20px
+    ;
+}
+img{
+    vertical-align: middle;
+    border-style: none;
+    width: 100px;
+}
+
+

@@ -65,3 +65,15 @@ Make the triple CSS page and then use the Travel API to connect with it.
 //     modal.style.display = "none"
 //   }
 // }
+
+
+
+
+                  console.log(cityObj[`${localStorage.zodiac}`]);
+
+
+
+                                  let cityObj = {
+                    gemini: "Italy",
+                    capricon: "Paris"
+                }

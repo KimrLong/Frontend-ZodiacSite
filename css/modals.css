@@ -74,7 +74,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
     color: #FF4081;
 }
 
-
+#withX{
+    font-size:xx-large;
+    text-transform: capitalize;
+  
+  }
 
 
 
