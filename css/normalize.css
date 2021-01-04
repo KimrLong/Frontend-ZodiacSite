@@ -142,11 +142,13 @@ h3 {
 h4 {
     font-size: 1em;
     margin: 1.33em 0;
+    color: white;
 }
 
 h5 {
     font-size: 0.83em;
     margin: 1.67em 0;
+    
 }
 
 h6 {
@@ -169,6 +171,7 @@ abbr[title] {
 b,
 strong {
     font-weight: bold;
+    
 }
 
 blockquote {
