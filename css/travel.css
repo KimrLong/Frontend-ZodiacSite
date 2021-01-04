@@ -7,17 +7,7 @@
     width:20%;
 }
 
-h3, h1, p{
-    text-align: center;
-    align-items: center;
-    color: rgb(228, 83, 107)
 
-}
-/* h3{
-    color: white;
-    padding: 20px
-    ; */
-/* } */
 img{
     vertical-align: middle;
     border-style: none;
@@ -28,21 +18,25 @@ img{
 .z10{
     z-index: 10;
 }
+.z5{
+    z-index: 5;
+}
 
 h3, h1, p{
     text-align: center;
     align-items: center;
-    color: rgb(228, 83, 107)
+    color: #FF4081;
+}
+h1{
+    padding-top: 50px;
 }
 h3{
-    color: white;
-    padding: 20px
-    ;
+    padding: 100px 200px 200px;
 }
-img{
-    vertical-align: middle;
-    border-style: none;
-    width: 100px;
+.pos-f-t {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 30;
 }
-
-
