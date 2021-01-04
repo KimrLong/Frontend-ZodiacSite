@@ -11,28 +11,33 @@
     <link rel="stylesheet" href="css/modals.css">
     <link rel="stylesheet" href="css/aos.css">
 </head>
-<!-- NavBar-->
+<!--nav bar -->
 <div class="pos-f-t">
     <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-        <h5 class="text-white h4">Collapsed content</h5>
-        <span class="text-muted">Toggleable via the navbar brand.</span>
+        <div class="bg-transparent p-4">
+            <a href="index.html" >MAIN</a>
+            <a href="AboutUs.html" >Our Story</a>
         </div>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
     </nav>
     </div>
-<!-- NavBar-->
+
+
     <body>
         <body >
             <div class="backgrounds overlay">
                 <div class="background aos-init aos-animate" data-aos="fade-in" data-aos-duration="1650" date-aos-anchor =".section--hero" style="background-image: url('images/jerry-larry-7uvixXrQkfw-unsplash.jpg');"></div>
             </div>
+
+
+
             <h1>
                 
+
             </h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -121,7 +126,11 @@
                 let cityNames = ["Italy" ,"Paris", "Greece", "Peru", "Indonesia", "Portugal", "Zambia", "Egypt", "Brazil", "Argentina", "Jamaica"]
                 let event = ["city_walk", "poi", "location","location_id" ]
                 // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
-                // italyCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[0]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
+
+                urlVariable = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[1]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
+                // urlVariable = fetch(`https://www.triposo.com/api/20201111/${event[1]}.json?&${event[3]}=${cityNames[0]}&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj`)
+                locationsArr.push(urlVariable);
+           // italyCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[0]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
                 country = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[x]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
                 // greeceCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[2]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
                 // peruCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[3]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
@@ -133,6 +142,7 @@
                 // argentinaCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[9]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
                 // jamaicaCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[10]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
                 locationsArr.push(country);
+
                 console.log(locationsArr);
                 let promiseTest = Promise.all(locationsArr);
                 console.log(promiseTest);
