@@ -27,11 +27,11 @@
     </div>
 <!-- NavBar-->
     <body>
-        <body data-aos-easing="ease-out-back" data-aos-duration="1000" data-aos-delay="0">
+        <body >
             <div class="backgrounds overlay">
                 <div class="background aos-init aos-animate" data-aos="fade-in" data-aos-duration="1650" date-aos-anchor =".section--hero" style="background-image: url('images/jerry-larry-7uvixXrQkfw-unsplash.jpg');"></div>
             </div>
-            <h1 data-aos="fade-in" data-aos-duration="800">
+            <h1>
                 
             </h1>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -41,6 +41,7 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
+                    <h1></h1>
                 <div id ="onePicture" class="carousel-item active">
                     <img class="w-50 d-flex mx-auto" src="images/Capri.jpg" alt="First slide">
                     <h3></h3>
@@ -78,7 +79,36 @@
                 else if(localStorage == cancer){
                     x = 3;
                 }
-                else if (localStorage == leo)
+                else if(localStorage == virgo)
+                {
+                    x = 4;
+                }
+                else if(localStorage == cancer){
+                    x = 5;
+                }
+                else if(localStorage == libra)
+                {
+                    x = 6;
+                }
+                else if(localStorage == scorpio){
+                    x = 7;
+                }
+                else if(localStorage == sagitarrius)
+                {
+                    x =8;
+                }
+                else if(localStorage == capricorn)
+                {
+                    x = 9;
+                }
+                else if(localStorage == aquarius){
+                    x = 10;
+                }
+                else if(localStorage == pisces)
+                {
+                    x = 11;
+                }
+    
                 // else if ()
                 // else if ()
                 // else if ()
@@ -91,17 +121,17 @@
                 let cityNames = ["Italy" ,"Paris", "Greece", "Peru", "Indonesia", "Portugal", "Zambia", "Egypt", "Brazil", "Argentina", "Jamaica"]
                 let event = ["city_walk", "poi", "location","location_id" ]
                 // urlVariable = fetch("https://www.triposo.com/api/20201111/location.json?id=London&account=M7ZTLRO4&token=kzu3zgg0gnorvzzecv7ru4i5qoph66xj")
-                italyCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[0]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
-                country = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[1]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
-                greeceCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[2]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
-                peruCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[3]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
-                indoCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[4]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
-                portCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[5]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
-                zambiaCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[6]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
-                egyptCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[7]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
-                brazilCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[8]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
-                argentinaCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[9]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
-                jamaicaCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[10]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
+                // italyCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[0]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
+                country = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[x]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
+                // greeceCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[2]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
+                // peruCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[3]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
+                // indoCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[4]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
+                // portCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[5]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
+                // zambiaCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[6]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
+                // egyptCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[7]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
+                // brazilCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[8]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
+                // argentinaCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[9]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
+                // jamaicaCountry = fetch(`https://www.triposo.com/api/20201111/location.json?part_of=${cityNames[10]}&tag_labels=island&count=10&fields=id,name,score,snippet&order_by=-score&account=6O01Q41B&token=va0q3wguq4g0kusg8f8ul6y1ti9xsxnp`)
                 locationsArr.push(country);
                 console.log(locationsArr);
                 let promiseTest = Promise.all(locationsArr);
