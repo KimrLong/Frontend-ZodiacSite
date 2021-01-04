@@ -1,14 +1,74 @@
-# This is the read me file!
+# **Zodiac Travel Destination!**
+<!-- ![](C:\Users\Kanny\DigitalCraft\Project FrontEnd\GroupProject\images\zodiac.png) -->
 
-## Team
+<p align="center">
+  
+  <img src="images\zodiac.png" width="350" alt="accessibility text">
+</p>
 
-- Kanny
-- Kim
-- Cedal
+___
+## Overview:
 
+about our project.......
+___
+## What we used:
 
-**bold text are used with 'astericks** 
+Technolgies:
+- HTML5
+- CSS3
+- JavaScript ES6
+- Bootstrap 4
+- Node.js
+- AOS animate-on-scroll library
+- AWS
 
-!()[would me used to a url
+APIs
+- one
+- two
 
-]
+Other:
+- AJAX
+- JSON
+
+___
+## MVP (Minimum Viable Product):
+- Desigining and hosting a zodiac page on AWS.
+-
+- Responsive design
+___
+## Stretch Goals Completed:
+- one
+- two
+- three
+___
+## Stretch Goals Future:
+- one
+- two
+- three
+___
+##Code Snippets:
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+## Team:
+- **Matthew Roberts** 
+
+ [Matthewtroberts10@gmail.com](Matthewtroberts10@gmail.com)
+
+ <https://github.com/Mattie-07>
+
+- **Kim Long** 
+
+ [Kimrlong09@gmail.com](Kimrlong09@gmail.com)
+
+ <https://github.com/KimrLong>
+
+ - **Kanny Mohamad** 
+
+ [kanny.ghafour@gmail.com](kanny.ghafour@gmail.com)
+
+ <https://github.com/kannyg87>

@@ -42,7 +42,6 @@ $(()=>{
     $(".cardClick").click(async (e)=> {
         var birthDate;
         if (e.target.id == "aries"){
-
         birthDate = await newFunc(Aries)
         }
         else if (e.target.id == "taurus"){
@@ -87,54 +86,6 @@ $(()=>{
             $("#myModal").modal('hide')
         })
         console.log(localStorage.zodiac)
-
-		birthDate = await newFunc(Aries)
-		}
-		else if (e.target.id == "taurus"){
-				birthDate = await newFunc(Taurus)
-		}
-		else if (e.target.id == "gemini"){
-		birthDate = await newFunc(Gemini)
-		}
-		else if(e.target.id == "cancer"){
-		birthDate = await newFunc(Cancer)
-		}
-		else if(e.target.id == "leo"){
-		birthDate = await newFunc(Leo)
-		}
-		else if(e.target.id == "virgo"){
-		birthDate = await newFunc(Virgo)
-		}
-		else if(e.target.id == "libra"){
-		birthDate = await newFunc(Libra)
-		}
-		else if(e.target.id == "scorpio"){
-		birthDate = await newFunc(Scorp)
-		}
-		else if(e.target.id == "sagittarius"){
-		birthDate = await newFunc(Sagg)
-		}
-		else if(e.target.id == "capricorn"){
-		birthDate = await newFunc(Cap)
-		}
-		else if(e.target.id == "aquarius"){
-		birthDate = await newFunc(Aqu)
-		}
-		else if(e.target.id == "pisces"){
-		birthDate = await newFunc(Pisces)
-		}
-		localStorage.zodiac = e.target.id
-
-        // var myHeading = "<h2>Travel Habits</h2>" //`${}`
-		$("#withX").html(e.target.id)
-		$("#nextX").html(birthDate)
-        $('#myModal').modal('show')
-        $(".btn").click(function(){
-			$("#myModal").modal('hide')
-			
-		})
-		console.log(localStorage.zodiac)
-
         console.log("modal")
     });
 })
