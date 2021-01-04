@@ -29,11 +29,19 @@ img{
     z-index: 10;
 }
 
+
 h3, h1, p{
     text-align: center;
     align-items: center;
-    color: rgb(228, 83, 107)
+    color: #FF4081;
 }
+h1{
+    padding-top: 50px;
+}
+h3{
+    padding: 100px 200px 200px;
+}
+
 h3{
     color: white;
     padding: 20px
