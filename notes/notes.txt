@@ -77,3 +77,5 @@ Make the triple CSS page and then use the Travel API to connect with it.
                     gemini: "Italy",
                     capricon: "Paris"
                 }
+
+                9pYhsD5BAfqHYMpGEpdPbXH4Sko5Dnq4 API key

@@ -41,13 +41,13 @@
                 <div class="carousel-inner">
                     <h1></h1>
                 <div id ="onePicture" class="carousel-item active">
-                    <img class="w-50 d-flex mx-auto" src="images/Capri.jpg" alt="First slide">
+                    <img id="image1" class="w-50 d-flex mx-auto"  alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="w-50 d-flex mx-auto" src="images/Island-Capri-Italy.jpg" alt="Second slide">
+                    <img id="image2"class="w-50 d-flex mx-auto"  alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="w-50 d-flex mx-auto " src="images/Capri3.jpg" alt="Third slide">
+                    <img id="image3" class="w-50 d-flex mx-auto " alt="Third slide">
                 </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -61,48 +61,104 @@
             </div>
             <h3></h3>
             <script>
+                const image1 = document.getElementById('image1')
+                const image2 = document.getElementById('image2')
+                const image3 = document.getElementById('image3')
+                var h1 =  document.querySelector("h1");
+                var h3 =  document.querySelector("h3");
             var x = 0;  //default value
+
             function zodiacInfo(zodiacName){
                 if(zodiacName == "aries"){
                     x = 0;
+                    image1.src = "images/Italy1.jpg"
+                    image2.src = "images/Italy2.jpg"
+                    image3.src = "images/Italy3.jpg"
+                    h1.innerText ="Your astrological destination is Italy!"
+
                 }
                 else if (zodiacName == "taurus"){
                     x = 1;
+                    image1.src ='images/Paris1.jpg'
+                    image2.src ='images/Paris2.jpg'
+                    image3.src ='images/Paris3.jpg'
+                    h1.innerText ="Your astrological destination is the lovely Paris!"
                 }
                 else if(zodiacName == "gemini"){
                     x = 2;
+                    image1.src ='images/Greece1.jpg'
+                    image2.src ='images/Greece2.jpg'
+                    image3.src ='images/Greece2.jpg'
+                    h1.innerText ="Hey Gemini! You're going to Greece!"
                 }
                 else if(zodiacName == "cancer"){
                     x = 3;
+                    image1.src ='images/Peru1.jpg'
+                    image2.src ='images/Peru2.jpg'
+                    image3.src ='images/Peru3.jpg'
+                    h1.innerText ="You're going to Peru, Cancer!"
+                    
                 }
                 else if(zodiacName == "virgo")
                 {
                     x = 4;
+                    image1.src ='images/Indonesia1.jpg'
+                    image2.src ='images/Indonesia2.jpg'
+                    image3.src ='images/Indonesia3.jpg'
+                    h1.innerText ="Virgo..How does Indonesia sound?"
                 }
                 else if(zodiacName == "leo"){
                     x = 5;
+                    image1.src ='images/Portugal1.jpg'
+                    image2.src ='images/Portugal2.jpg'
+                    image3.src ='images/Portugal3.jpg'
+                    h1.innerText ="You're going to Portugal, Leo!"
                 }
                 else if(zodiacName == "libra")
                 {
                     x = 6;
+                    image1.src ='images/Mexico1.jpg'
+                    image2.src ='images/Mexico2.jpg'
+                    image3.src ='images/Mexico3.jpg'
+                    h1.innerText ="Tipping the scales and head to Mexico, Libra!"
                 }
                 else if(zodiacName == "scorpio"){
                     x = 7;
+                    image1.src ='images/Egypt.jpg'
+                    image2.src ='images/Egpyt2.jpg'
+                    image3.src ='images/egypt3.jpg'
+                    h1.innerText ="Egypt is where you are going Scorpio!"
                 }
                 else if(zodiacName == "sagittarius")
                 {
                     x = 8;
+                    image1.src ='images/Brazil1.jpg'
+                    image2.src ='images/Brazil2.jpg'
+                    image3.src ='images/Brazil3.jpg'
+                    h1.innerText ="You'll really love Brazil Sag. Let's plan that trip"
                 }
                 else if(zodiacName == "capricorn")
                 {
                     x = 9;
+                    image1.src ='images/Argentina1.jpg'
+                    image2.src ='images/Argentina2.jpg'
+                    image3.src ='images/Argentina3.jpg'
+                    h1.innerText ="Argentina is where we recommend you should go Capricorn"
                 }
                 else if(zodiacName == "aquarius"){
                     x = 10;
+                    image1.src ='images/Jamaica.jpg'
+                    image2.src ='images/Jamaica2.jpg'
+                    image3.src ='images/Jamaica3.jpg'
+                    h1.innerText ="Jamaica is going to be great Aquarius!"
                 }
                 else if(zodiacName == "pisces")
                 {
                     x = 11;
+                    image1.src ='images/Australia1.jpg'
+                    image3.src ='images/australia2.jpg'
+                    image3.src ='images/australi3.jpg'
+                    h1.innerText ="Pisces, mate, you're heading to Australia!"
                 }
                 let locationsArr = [];
                 let country = "";;
@@ -118,14 +174,11 @@
                 }))
             .then((dataOfArray) =>{
                     console.log(dataOfArray);
-                    console.log(x);
                     var text = `Your astrological destination is ${dataOfArray[0].results[0].name}!`
                     var snippet = `${dataOfArray[0].results[0].snippet}`
                     console.log(text);
                     console.log(snippet);
-                    var h1 =  document.querySelector("h1");
                     var h3 = document.querySelector("h3");
-                    h1.innerHTML = text;
                     h3.innerHTML = snippet;
                 })
             })

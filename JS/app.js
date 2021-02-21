@@ -32,8 +32,8 @@ var travelInfo =
         .then(result => result.json())
         .then(data => {
             console.log(data)
-            console.log(data.data["Travel Habits"])
-            return data.data["Travel Habits"]
+            console.log(data.data.result["Travel Habits"])
+            return data.data.result["Travel Habits"]
         })
         console.log(travelInfo)
         return travelInfo
