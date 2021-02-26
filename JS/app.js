@@ -15,7 +15,7 @@ var Sagg = "2000-12-17"
 //API call information
 async function newFunc(zodiac){
 var opts = {
-    mystic_dob: zodiac
+    mystic_dob: zodiac  ///date value connected to api zodiac sign
 }
 var travelInfo =
     await fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/",
