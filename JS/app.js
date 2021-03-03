@@ -15,7 +15,7 @@ var Sagg = "2000-12-17"
 //API call information
 async function newFunc(zodiac){
 var opts = {
-    mystic_dob: zodiac
+    mystic_dob: zodiac  ///date value connected to api zodiac sign
 }
 var travelInfo =
     await fetch("https://astrology-horoscope.p.rapidapi.com/zodiac_astrology/result/",
@@ -31,13 +31,14 @@ var travelInfo =
         })
         .then(result => result.json())
         .then(data => {
-            console.log(data)
-            console.log(data.data.result["Travel Habits"])
+            console.log("return data",data)
+            console.log("data array", data.data.result["Travel Habits"])
             return data.data.result["Travel Habits"]
         })
-        console.log(travelInfo)
+        
         return travelInfo
     }
+    // console.log(travelInfo)
 // enter modal function here//
 $(()=>{
     $(".cardClick").click(async (e)=> {
@@ -46,7 +47,7 @@ $(()=>{
         birthDate = await newFunc(Aries)
         }
         else if (e.target.id == "taurus"){
-                birthDate = await newFunc(Taurus)
+        birthDate = await newFunc(Taurus)
         }
         else if (e.target.id == "gemini"){
         birthDate = await newFunc(Gemini)

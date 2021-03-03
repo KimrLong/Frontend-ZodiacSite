@@ -4,7 +4,7 @@ body {
     padding: 0px;
     background-color:#e5e5e5;
 
-   
+
 }
 .cp-bg-navy {
 background-color: #003348;
@@ -340,3 +340,27 @@ color: black;
 
 .cp-text-brown {
 } */
+
+img {
+    width: 100px;
+    height: auto;
+}
+/* sm */
+@media (min-width: 768px) {
+    img {
+        width: 150px;
+    }
+}
+/* md */
+@media (min-width: 992px) {
+    img {
+        width: 200px;
+    }
+}
+/* lg */
+@media (min-width: 1200px) {
+    img {
+        width: 250px;
+    }
+}
+
