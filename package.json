@@ -1,0 +1,23 @@
+{
+  "name": "groupproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "amadeus": "^5.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mattie-07/GroupProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mattie-07/GroupProject/issues"
+  },
+  "homepage": "https://github.com/Mattie-07/GroupProject#readme"
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    testing
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+const Amadeus = require("amadeus");
+const amadeus = new Amadeus({
+  clientId: 'kMTZbJ76rhF63Ed22tnN0g5lAurDC7bF',
+  clientSecret: 'i5lVaOJlpliroM8B'
+});
+
+// Recommended locations similar to PAR
+amadeus.referenceData.recommendedLocations.get({
+    cityCodes: 'PAR',
+    travelerCountryCode: 'FR'
+}).then(function(response) {
+    console.log(response.data);
+}).catch((error) => {
+    console.log("Error");
+    done();
+});
+</script>
+
+</body>
+</html>
